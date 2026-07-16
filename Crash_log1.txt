@@ -1,0 +1,137 @@
+2026-07-16 15:41:47.990 I/MainActivity: VPN start requested
+2026-07-16 15:41:48.018 I/AetherService: aether process started, pid=131153288
+2026-07-16 15:41:48.050 I/AetherService: [2026-07-16T11:11:48.048Z INFO  aether] [+] loaded existing masque identity from aether-masque.toml
+
+2026-07-16 15:41:48.054 I/AetherService: [2026-07-16T11:11:48.048Z INFO  aether] [+] identity ready: device=93c14923-41d2-48df-bfd3-42bb6d0bb7d2 ipv4=172.16.0.2 ipv6=2606:4700:110:8336:2a6d:4927:b4ab:de98
+
+2026-07-16 15:41:48.057 I/AetherService: [2026-07-16T11:11:48.048Z INFO  aether] [+] ECH disabled (warp masque endpoint does not accept ECH); SNI sent in cleartext
+
+2026-07-16 15:41:48.060 I/AetherService: [2026-07-16T11:11:48.049Z INFO  aether] [*] verifying cached gateway 162.159.198.1:443 before reuse
+
+2026-07-16 15:41:48.064 I/AetherService: [2026-07-16T11:11:48.049Z INFO  aether] [+] obfuscation profile: firewall
+
+2026-07-16 15:41:49.418 I/AetherService: [2026-07-16T11:11:49.415Z INFO  aether] [+] cached gateway 162.159.198.1:443 still works; skipping scan
+
+2026-07-16 15:41:49.421 I/AetherService: [2026-07-16T11:11:49.415Z INFO  aether] [+] using cloudflare edge 162.159.198.1:443
+
+2026-07-16 15:41:49.425 I/AetherService: [2026-07-16T11:11:49.415Z INFO  aether] [+] obfuscation profile: firewall
+
+2026-07-16 15:41:49.428 I/AetherService: [2026-07-16T11:11:49.416Z INFO  aether] [+] MASQUE transport: HTTP/3 (QUIC) to 162.159.198.1:443
+
+2026-07-16 15:41:49.755 I/AetherService: [2026-07-16T11:11:49.748Z INFO  aether::quic] quic handshake established; alpn=h3
+
+2026-07-16 15:41:49.763 I/AetherService: [2026-07-16T11:11:49.748Z INFO  aether::quic] connect-ip request sent on stream 0
+
+2026-07-16 15:41:49.771 I/AetherService: [2026-07-16T11:11:49.749Z INFO  aether::quic] [*] validating masque data-plane before exposing socks5
+
+2026-07-16 15:41:50.407 I/AetherService: [2026-07-16T11:11:50.403Z INFO  aether::quic] connect-ip status: 200
+
+2026-07-16 15:41:50.412 I/AetherService: [2026-07-16T11:11:50.406Z INFO  aether::quic] [+] masque tunnel validated (end-to-end data confirmed); exposing socks5
+
+2026-07-16 15:41:50.415 I/AetherService: [2026-07-16T11:11:50.406Z INFO  aether] [+] socks5 server listening on 127.0.0.1:1819
+
+2026-07-16 15:41:50.418 I/AetherService: [2026-07-16T11:11:50.406Z INFO  aether::socks] socks5 listening on 127.0.0.1:1819
+
+2026-07-16 15:41:53.016 I/AetherVpnService: VPN started, tun2socks launching
+2026-07-16 15:41:53.028 I/Tun2Socks: tun2socks started, proxy=127.0.0.1:1819 dns=1.1.1.1
+2026-07-16 15:41:53.038 I/Tun2Socks: [+] TCP SYN dst=149.154.165.111:443
+2026-07-16 15:41:53.269 I/Tun2Socks: [+] TCP SYN dst=149.154.175.59:5222
+2026-07-16 15:41:53.544 I/Tun2Socks: [+] TCP SYN dst=91.108.56.196:5222
+2026-07-16 15:41:55.293 I/AetherVpnService: VPN_STOP intent received - user requested stop
+2026-07-16 15:41:55.424 I/Tun2Socks: tun2socks stopped
+2026-07-16 15:41:55.434 E/AetherService: runAetherInternal io
+java.io.InterruptedIOException: read interrupted
+	at libcore.io.Linux.readBytes(Native Method)
+	at libcore.io.Linux.read(Linux.java:189)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:305)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.IoBridge.read(IoBridge.java:509)
+	at java.io.FileInputStream.read(FileInputStream.java:320)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:347)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:291)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:355)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:181)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:172)
+	at java.io.BufferedReader.readLine(BufferedReader.java:335)
+	at java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at com.aether.wrapper.AetherService.runAetherInternal(AetherService.java:136)
+	at com.aether.wrapper.AetherService.access$0(AetherService.java:95)
+	at com.aether.wrapper.AetherService$1.run(AetherService.java:72)
+	at java.lang.Thread.run(Thread.java:923)
+
+2026-07-16 15:41:55.444 I/Tun2Socks: reader loop exited (running=false)
+2026-07-16 15:41:55.448 I/AetherVpnService: onDestroy called - service being killed
+2026-07-16 15:41:56.824 I/MainActivity: VPN start requested
+2026-07-16 15:41:56.862 I/AetherService: aether process started, pid=18450391
+2026-07-16 15:41:56.875 I/AetherService: [2026-07-16T11:11:56.873Z INFO  aether] [+] loaded existing masque identity from aether-masque.toml
+
+2026-07-16 15:41:56.879 I/AetherService: [2026-07-16T11:11:56.874Z INFO  aether] [+] identity ready: device=93c14923-41d2-48df-bfd3-42bb6d0bb7d2 ipv4=172.16.0.2 ipv6=2606:4700:110:8336:2a6d:4927:b4ab:de98
+
+2026-07-16 15:41:56.883 I/AetherService: [2026-07-16T11:11:56.874Z INFO  aether] [+] ECH disabled (warp masque endpoint does not accept ECH); SNI sent in cleartext
+
+2026-07-16 15:41:56.886 I/AetherService: [2026-07-16T11:11:56.874Z INFO  aether] [*] verifying cached gateway 162.159.198.1:443 before reuse
+
+2026-07-16 15:41:56.889 I/AetherService: [2026-07-16T11:11:56.874Z INFO  aether] [+] obfuscation profile: firewall
+
+2026-07-16 15:41:58.224 I/AetherService: [2026-07-16T11:11:58.216Z INFO  aether] [+] cached gateway 162.159.198.1:443 still works; skipping scan
+
+2026-07-16 15:41:58.233 I/AetherService: [2026-07-16T11:11:58.216Z INFO  aether] [+] using cloudflare edge 162.159.198.1:443
+
+2026-07-16 15:41:58.244 I/AetherService: [2026-07-16T11:11:58.217Z INFO  aether] [+] obfuscation profile: firewall
+
+2026-07-16 15:41:58.253 I/AetherService: [2026-07-16T11:11:58.217Z INFO  aether] [+] MASQUE transport: HTTP/3 (QUIC) to 162.159.198.1:443
+
+2026-07-16 15:41:58.570 I/AetherService: [2026-07-16T11:11:58.565Z INFO  aether::quic] quic handshake established; alpn=h3
+
+2026-07-16 15:41:58.581 I/AetherService: [2026-07-16T11:11:58.568Z INFO  aether::quic] connect-ip request sent on stream 0
+
+2026-07-16 15:41:58.590 I/AetherService: [2026-07-16T11:11:58.568Z INFO  aether::quic] [*] validating masque data-plane before exposing socks5
+
+2026-07-16 15:41:59.266 I/AetherService: [2026-07-16T11:11:59.259Z INFO  aether::quic] connect-ip status: 200
+
+2026-07-16 15:41:59.275 I/AetherService: [2026-07-16T11:11:59.261Z INFO  aether::quic] [+] masque tunnel validated (end-to-end data confirmed); exposing socks5
+
+2026-07-16 15:41:59.284 I/AetherService: [2026-07-16T11:11:59.261Z INFO  aether] [+] socks5 server listening on 127.0.0.1:1819
+
+2026-07-16 15:41:59.293 I/AetherService: [2026-07-16T11:11:59.262Z INFO  aether::socks] socks5 listening on 127.0.0.1:1819
+
+2026-07-16 15:42:01.823 I/AetherVpnService: VPN started, tun2socks launching
+2026-07-16 15:42:01.832 I/Tun2Socks: tun2socks started, proxy=127.0.0.1:1819 dns=1.1.1.1
+2026-07-16 15:42:01.835 I/Tun2Socks: [+] TCP SYN dst=91.108.56.196:443
+2026-07-16 15:42:04.470 I/AetherVpnService: VPN_STOP intent received - user requested stop
+2026-07-16 15:42:04.606 I/Tun2Socks: tun2socks stopped
+2026-07-16 15:42:04.626 E/AetherService: runAetherInternal io
+java.io.InterruptedIOException: read interrupted
+	at libcore.io.Linux.readBytes(Native Method)
+	at libcore.io.Linux.read(Linux.java:189)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:305)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.IoBridge.read(IoBridge.java:509)
+	at java.io.FileInputStream.read(FileInputStream.java:320)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:347)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:291)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:355)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:181)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:172)
+	at java.io.BufferedReader.readLine(BufferedReader.java:335)
+	at java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at com.aether.wrapper.AetherService.runAetherInternal(AetherService.java:136)
+	at com.aether.wrapper.AetherService.access$0(AetherService.java:95)
+	at com.aether.wrapper.AetherService$1.run(AetherService.java:72)
+	at java.lang.Thread.run(Thread.java:923)
+
+2026-07-16 15:42:04.633 I/AetherVpnService: onDestroy called - service being killed
+2026-07-16 15:42:04.639 I/Tun2Socks: reader loop exited (running=false)
+
+این Apk
+حالت vpn 
+آن کار نمی کند از 
+GO
+استفاده کن و تضمینی حالت VPN
+آن را درست کن
