@@ -1,0 +1,40 @@
+2026-07-16 14:15:13.019 I/MainActivity: onCreate done, device API=30
+2026-07-16 14:15:18.926 I/MainActivity: storage permission granted
+2026-07-16 14:15:18.941 I/MainActivity: storage permission granted
+2026-07-16 14:15:18.980 F/CRASH: Uncaught exception on thread main (id=2)
+java.lang.VerifyError: Verifier rejected class com.aether.wrapper.AetherVpnService: int com.aether.wrapper.AetherVpnService.onStartCommand(android.content.Intent, int, int) failed to verify: int com.aether.wrapper.AetherVpnService.onStartCommand(android.content.Intent, int, int): [0x1F] register v0 has type Precise Reference: java.lang.String but expected Boolean (declaration of 'com.aether.wrapper.AetherVpnService' appears in /data/app/~~Iz_ItflupNlMmNPTG68c5g==/com.aether.wrapper-TAXhXRchYE7injCMi1wU2g==/base.apk)
+	at com.aether.wrapper.MainActivity$1.run(MainActivity.java:70)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:246)
+	at android.app.ActivityThread.main(ActivityThread.java:8512)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:602)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1139)
+
+2026-07-16 14:15:20.284 I/MainActivity: onCreate done, device API=30
+2026-07-16 14:15:20.574 F/CRASH: Uncaught exception on thread main (id=2)
+java.lang.VerifyError: Verifier rejected class com.aether.wrapper.AetherVpnService: int com.aether.wrapper.AetherVpnService.onStartCommand(android.content.Intent, int, int) failed to verify: int com.aether.wrapper.AetherVpnService.onStartCommand(android.content.Intent, int, int): [0x1F] register v0 has type Precise Reference: java.lang.String but expected Boolean (declaration of 'com.aether.wrapper.AetherVpnService' appears in /data/app/~~Iz_ItflupNlMmNPTG68c5g==/com.aether.wrapper-TAXhXRchYE7injCMi1wU2g==/base.apk)
+	at com.aether.wrapper.MainActivity$1.run(MainActivity.java:70)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:246)
+	at android.app.ActivityThread.main(ActivityThread.java:8512)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:602)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1139)
+
+2026-07-16 14:15:46.254 I/MainActivity: onCreate done, device API=30
+2026-07-16 14:15:46.437 F/CRASH: Uncaught exception on thread main (id=2)
+java.lang.VerifyError: Verifier rejected class com.aether.wrapper.AetherVpnService: int com.aether.wrapper.AetherVpnService.onStartCommand(android.content.Intent, int, int) failed to verify: int com.aether.wrapper.AetherVpnService.onStartCommand(android.content.Intent, int, int): [0x1F] register v0 has type Precise Reference: java.lang.String but expected Boolean (declaration of 'com.aether.wrapper.AetherVpnService' appears in /data/app/~~Iz_ItflupNlMmNPTG68c5g==/com.aether.wrapper-TAXhXRchYE7injCMi1wU2g==/base.apk)
+	at com.aether.wrapper.MainActivity$1.run(MainActivity.java:70)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:246)
+	at android.app.ActivityThread.main(ActivityThread.java:8512)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:602)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1139)
+
+در 6 دقیقه لاگ قبلی vpn 
+اصلا کار نکرده بود و چیزی را وصل نمی کرد
