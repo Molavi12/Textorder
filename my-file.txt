@@ -1,0 +1,132 @@
+2026-07-16 13:17:59.024 I/MainActivity: VPN start requested
+2026-07-16 13:17:59.062 I/AetherService: aether process started, pid=237139921
+2026-07-16 13:17:59.085 I/AetherService: [2026-07-16T08:47:59.083Z INFO  aether] [+] loaded existing masque identity from aether-masque.toml
+
+2026-07-16 13:17:59.090 I/AetherService: [2026-07-16T08:47:59.085Z INFO  aether] [+] identity ready: device=9495fff7-3094-4b2f-9940-36224ef237dc ipv4=172.16.0.2 ipv6=2606:4700:110:8ca5:aa45:dd8e:8f74:957b
+
+2026-07-16 13:17:59.092 I/AetherService: [2026-07-16T08:47:59.085Z INFO  aether] [+] ECH disabled (warp masque endpoint does not accept ECH); SNI sent in cleartext
+
+2026-07-16 13:17:59.095 I/AetherService: [2026-07-16T08:47:59.085Z INFO  aether] [*] hunting for a working MASQUE gateway (deep connect-ip + data-plane verification)
+
+2026-07-16 13:17:59.099 I/AetherService: [2026-07-16T08:47:59.085Z INFO  aether] [+] obfuscation profile: firewall
+
+2026-07-16 13:17:59.101 I/AetherService: [2026-07-16T08:47:59.087Z WARN  aether::prober] [-] host has no IPv6 route; falling back to IPv4-only scan
+
+2026-07-16 13:17:59.104 I/AetherService: [2026-07-16T08:47:59.089Z INFO  aether::prober] [*] scan mode=turbo ip=ipv4 candidates=324 ports=[443] concurrency=20 per_probe=6s budget=45s
+
+2026-07-16 13:17:59.226 E/AetherVpnService: SOCKS5 proxy did not come up in time (will retry)
+2026-07-16 13:17:59.234 E/AetherService: runAetherInternal io
+java.io.InterruptedIOException: read interrupted
+	at libcore.io.Linux.readBytes(Native Method)
+	at libcore.io.Linux.read(Linux.java:189)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:305)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.IoBridge.read(IoBridge.java:509)
+	at java.io.FileInputStream.read(FileInputStream.java:320)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:347)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:291)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:355)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:181)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:172)
+	at java.io.BufferedReader.readLine(BufferedReader.java:335)
+	at java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at com.aether.wrapper.AetherService.runAetherInternal(AetherService.java:136)
+	at com.aether.wrapper.AetherService.access$0(AetherService.java:95)
+	at com.aether.wrapper.AetherService$1.run(AetherService.java:72)
+	at java.lang.Thread.run(Thread.java:923)
+
+2026-07-16 13:18:00.276 I/AetherService: aether process started, pid=106952513
+2026-07-16 13:18:00.314 I/AetherService: [2026-07-16T08:48:00.296Z INFO  aether] [+] loaded existing masque identity from aether-masque.toml
+
+2026-07-16 13:18:00.323 I/AetherService: [2026-07-16T08:48:00.296Z INFO  aether] [+] identity ready: device=9495fff7-3094-4b2f-9940-36224ef237dc ipv4=172.16.0.2 ipv6=2606:4700:110:8ca5:aa45:dd8e:8f74:957b
+
+2026-07-16 13:18:00.329 I/AetherService: [2026-07-16T08:48:00.296Z INFO  aether] [+] ECH disabled (warp masque endpoint does not accept ECH); SNI sent in cleartext
+
+2026-07-16 13:18:00.336 I/AetherService: [2026-07-16T08:48:00.296Z INFO  aether] [*] hunting for a working MASQUE gateway (deep connect-ip + data-plane verification)
+
+2026-07-16 13:18:00.343 I/AetherService: [2026-07-16T08:48:00.296Z INFO  aether] [+] obfuscation profile: firewall
+
+2026-07-16 13:18:00.352 I/AetherService: [2026-07-16T08:48:00.297Z INFO  aether::prober] [*] scan mode=balanced ip=ipv4 candidates=703 ports=[443] concurrency=16 per_probe=6s budget=120s
+
+2026-07-16 13:18:04.103 I/AetherService: [2026-07-16T08:48:04.097Z INFO  aether::prober] [+] candidate ok 162.159.198.1:443 rtt=3.784863332s
+
+2026-07-16 13:18:20.445 E/AetherService: runAetherInternal io
+java.io.InterruptedIOException: read interrupted
+	at libcore.io.Linux.readBytes(Native Method)
+	at libcore.io.Linux.read(Linux.java:189)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:305)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.IoBridge.read(IoBridge.java:509)
+	at java.io.FileInputStream.read(FileInputStream.java:320)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:347)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:291)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:355)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:181)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:172)
+	at java.io.BufferedReader.readLine(BufferedReader.java:335)
+	at java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at com.aether.wrapper.AetherService.runAetherInternal(AetherService.java:136)
+	at com.aether.wrapper.AetherService.access$0(AetherService.java:95)
+	at com.aether.wrapper.AetherService$1.run(AetherService.java:72)
+	at java.lang.Thread.run(Thread.java:923)
+
+2026-07-16 13:18:38.696 I/MainActivity: VPN start requested
+2026-07-16 13:18:38.728 I/AetherService: aether process started, pid=28126708
+2026-07-16 13:18:38.744 I/AetherService: [2026-07-16T08:48:38.742Z INFO  aether] [+] loaded existing masque identity from aether-masque.toml
+
+2026-07-16 13:18:38.748 I/AetherService: [2026-07-16T08:48:38.743Z INFO  aether] [+] identity ready: device=9495fff7-3094-4b2f-9940-36224ef237dc ipv4=172.16.0.2 ipv6=2606:4700:110:8ca5:aa45:dd8e:8f74:957b
+
+2026-07-16 13:18:38.751 I/AetherService: [2026-07-16T08:48:38.744Z INFO  aether] [+] ECH disabled (warp masque endpoint does not accept ECH); SNI sent in cleartext
+
+2026-07-16 13:18:38.755 I/AetherService: [2026-07-16T08:48:38.744Z INFO  aether] [*] hunting for a working MASQUE gateway (deep connect-ip + data-plane verification)
+
+2026-07-16 13:18:38.758 I/AetherService: [2026-07-16T08:48:38.744Z INFO  aether] [+] obfuscation profile: firewall
+
+2026-07-16 13:18:38.762 I/AetherService: [2026-07-16T08:48:38.745Z WARN  aether::prober] [-] host has no IPv6 route; falling back to IPv4-only scan
+
+2026-07-16 13:18:38.765 I/AetherService: [2026-07-16T08:48:38.746Z INFO  aether::prober] [*] scan mode=turbo ip=ipv4 candidates=325 ports=[443] concurrency=20 per_probe=6s budget=45s
+
+2026-07-16 13:18:38.872 E/AetherVpnService: SOCKS5 proxy did not come up in time (will retry)
+2026-07-16 13:18:38.880 E/AetherService: runAetherInternal io
+java.io.InterruptedIOException: read interrupted
+	at libcore.io.Linux.readBytes(Native Method)
+	at libcore.io.Linux.read(Linux.java:189)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.BlockGuardOs.read(BlockGuardOs.java:305)
+	at libcore.io.ForwardingOs.read(ForwardingOs.java:176)
+	at libcore.io.IoBridge.read(IoBridge.java:509)
+	at java.io.FileInputStream.read(FileInputStream.java:320)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:347)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:291)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:355)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:181)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:172)
+	at java.io.BufferedReader.readLine(BufferedReader.java:335)
+	at java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at com.aether.wrapper.AetherService.runAetherInternal(AetherService.java:136)
+	at com.aether.wrapper.AetherService.access$0(AetherService.java:95)
+	at com.aether.wrapper.AetherService$1.run(AetherService.java:72)
+	at java.lang.Thread.run(Thread.java:923)
+
+2026-07-16 13:18:39.889 I/AetherService: aether process started, pid=32635940
+2026-07-16 13:18:39.902 I/AetherService: [2026-07-16T08:48:39.899Z INFO  aether] [+] loaded existing masque identity from aether-masque.toml
+
+2026-07-16 13:18:39.907 I/AetherService: [2026-07-16T08:48:39.899Z INFO  aether] [+] identity ready: device=9495fff7-3094-4b2f-9940-36224ef237dc ipv4=172.16.0.2 ipv6=2606:4700:110:8ca5:aa45:dd8e:8f74:957b
+
+2026-07-16 13:18:39.911 I/AetherService: [2026-07-16T08:48:39.899Z INFO  aether] [+] ECH disabled (warp masque endpoint does not accept ECH); SNI sent in cleartext
+
+2026-07-16 13:18:39.913 I/AetherService: [2026-07-16T08:48:39.899Z INFO  aether] [*] hunting for a working MASQUE gateway (deep connect-ip + data-plane verification)
+
+2026-07-16 13:18:39.918 I/AetherService: [2026-07-16T08:48:39.899Z INFO  aether] [+] obfuscation profile: firewall
+
+2026-07-16 13:18:39.923 I/AetherService: [2026-07-16T08:48:39.900Z INFO  aether::prober] [*] scan mode=balanced ip=ipv4 candidates=703 ports=[443] concurrency=16 per_probe=6s budget=120s
+
+2026-07-16 13:18:41.904 I/AetherService: [2026-07-16T08:48:41.896Z INFO  aether::prober] [+] candidate ok 162.159.198.1:443 rtt=1.988385676s
